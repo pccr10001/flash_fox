@@ -1,0 +1,11 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libmman
+Description: A light implementation of the mmap functions for MinGW.
+Version: r31.fedbdbf-1
+Libs: -L${libdir} -lmman
+Libs.private: 
+Cflags: -I${includedir}/libmman
