@@ -7,6 +7,10 @@ Foxconn T99W175 flash utility
 ```
 pacman -S mingw-w64-x86_64-mman-win32 mingw-w64-x86_64-libusb
 ```
+* Download `libmman.pc` to `pkgconfig` dir
+```
+wget https://github.com/pccr10001/flash_fox/raw/refs/heads/main/libmman.pc -O /mingw64/lib/pkgconfig/libmman.pc
+```
 * Compile
 ```
 git clone https://github.com/pccr10001/flash_fox
