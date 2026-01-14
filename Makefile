@@ -1,7 +1,7 @@
 TARGET = flash_fox
 CC = $(CROSS_COMPILE)gcc
 SDIR = src
-LIBS = libusb-1.0
+LIBS = libusb-1.0 libmman
 
 ROOT_DIR = $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
 CPPFLAGS = -D_GNU_SOURCE -DPIC -DDEBUG
